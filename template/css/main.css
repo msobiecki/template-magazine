@@ -246,6 +246,12 @@ html {
   }
 }
 
+@media (max-width: 767px) {
+  .blog__titlebox {
+    padding-bottom: 0;
+  }
+}
+
 .blog__content {
   width: 66.66%;
   padding: 15px;
@@ -274,6 +280,12 @@ html {
   margin-bottom: 15px;
   font-style: italic;
   cursor: default;
+}
+
+@media (max-width: 767px) {
+  .blog__land {
+    margin-bottom: 5px;
+  }
 }
 
 .blog__text {
