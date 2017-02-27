@@ -1,0 +1,323 @@
+/* Vendors
+ * Contains all the 3rd party styles
+ * ========================================================================== */
+@import url(../node_modules/animate.css/animate.min.css);
+@import url(../node_modules/slick-carousel/slick/slick.css);
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300:300i:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Utils
+ * Contains all mixins, functions and helpers
+ * ========================================================================== */
+/* RESOLUTIONS
+ *============================================================================ */
+/* DEVICES REGION
+ *========================================================================== */
+/* Mobile 0px -> 480px -> 600px -> 767px
+ *-------------------------------------------------------------------------- */
+/* Tablet 768px -> 800px -> 969px
+ *-------------------------------------------------------------------------- */
+/* LAPTOP 970px -> 1199px
+ *-------------------------------------------------------------------------- */
+/* PC 1200px ->
+ *-------------------------------------------------------------------------- */
+/* Base
+ * Contains all the global styles for the application as well as the resets, typography, colors, buttons, etc...
+ * You should also define a _variables.scss to define all app variables
+ * ========================================================================== */
+/* WEBSITE FONTS
+ *========================================================================== */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #222626;
+  background: #ffffff;
+}
+
+a {
+  color: #222626;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Layout
+ * Contains styling elements for the larger 'core' modules like loading bars / indicators, wrappers, containers, etc...
+ * ========================================================================== */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: #cc171e;
+}
+
+.loader__icon {
+  height: 80px;
+  width: 80px;
+}
+
+.arrow {
+  transition: color .15s ease-in-out;
+  z-index: 2;
+  position: fixed;
+  height: 36px;
+  width: 36px;
+  right: 5px;
+  bottom: 5px;
+  display: none;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  cursor: pointer;
+}
+
+.arrow:hover {
+  color: #343434;
+}
+
+.arrow.-visible {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.arrow i {
+  font-size: 28px;
+}
+
+/* Common
+ *========================================================================== */
+/* Components
+ * Contains each isolated component. Should ideally mimic the Angular component structure
+ * ========================================================================== */
+.blog {
+  outline: none;
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  padding: 60px 0;
+}
+
+@media (max-width: 767px) {
+  .blog {
+    height: inherit;
+    min-height: 520px;
+  }
+}
+
+.blog__container {
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 100%;
+  max-width: 1230px;
+}
+
+.blog__container:before, .blog__container:after {
+  content: " ";
+  display: table;
+}
+
+.blog__container:after {
+  clear: both;
+}
+
+@media (max-width: 969px) {
+  .blog__container {
+    padding: 0 15px;
+  }
+}
+
+.blog__box {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blog__holder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 969px) {
+  .blog__holder {
+    position: relative;
+    -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
+    top: inherit;
+    left: inherit;
+  }
+}
+
+.blog__titlebox {
+  width: 33.33%;
+  padding: 15px;
+}
+
+@media (max-width: 969px) {
+  .blog__titlebox {
+    width: 100%;
+  }
+}
+
+.blog__content {
+  width: 66.66%;
+  padding: 15px;
+}
+
+@media (max-width: 969px) {
+  .blog__content {
+    width: 100%;
+  }
+}
+
+.blog__title {
+  font-family: 'Merriweather', serif;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 15px;
+  cursor: default;
+}
+
+.blog__land {
+  font-family: 'Merriweather', serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 15px;
+  font-style: italic;
+  cursor: default;
+}
+
+.blog__text {
+  -moz-column-count: 2;
+       column-count: 2;
+  cursor: default;
+  font-family: 'Merriweather', serif;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+@media (max-width: 767px) {
+  .blog__text {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+}
+
+.blog__text > p {
+  margin-bottom: 15px;
+}
+
+.blog__category {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  cursor: default;
+}
+
+.blog__category > span {
+  color: #d1232a;
+  cursor: default;
+}
+
+.blog__category > a {
+  transition: all .15s ease-in-out;
+  color: #cccccc;
+  cursor: pointer;
+}
+
+.blog__category > a:hover {
+  color: white;
+}
