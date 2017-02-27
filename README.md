@@ -1,3 +1,3 @@
-# Template-Take
+# Template-Magazine
 
-![preview](https://i.imgur.com/ORfn645.jpg)
+![preview]()
