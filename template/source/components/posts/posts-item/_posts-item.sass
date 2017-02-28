@@ -1,1 +1,74 @@
 .posts-item
+  $parent: &
+  position: relative
+  background-color: white
+  padding-bottom: 44px
+
+  &__imagebox
+    overflow: hidden
+
+
+  &__image
+    transition: transform .3s ease-in-out
+    display: block
+    width: 100%
+    height: auto
+
+    @at-root #{$parent}:hover &
+      transform: scale(1.1, 1.1)
+
+  &__details
+    padding: 25px
+
+  &__title
+    +fontMerriweather
+    font-size: 23px
+    font-weight: 600
+    color: #000000
+    margin-bottom: 15px
+    cursor: default
+
+  &__text
+    +fontMerriweather
+    font-size: 13px
+    font-weight: 300
+    color: #697b83
+    cursor: default
+
+  &__footer
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    height: 44px
+    display: flex
+    justify-content: space-between
+    width: 100%
+    border-top: 1px solid #f3f3f3
+    padding-left: 25px
+
+  &__author
+    +fontMerriweather
+    display: flex
+    align-items: center
+    color: #d1232a
+    font-size: 10px
+    font-weight: 500
+    cursor: default
+    i
+      font-size: 18px
+      margin-right: 5px
+
+  &__more
+    transition: background-color .15s ease-in-out
+    height: 44px
+    width: 44px
+    background-color: #d1232a
+    color: white
+
+    display: flex
+    align-items: center
+    justify-content: center
+
+    &:hover
+      background-color: lighten(#d1232a, 5)

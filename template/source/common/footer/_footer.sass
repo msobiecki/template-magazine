@@ -1,0 +1,37 @@
+.footer
+  position: relative
+  background-color: #11161d
+  padding: 80px 0
+  +MAX(969px)
+    padding: 45px 0
+  +MAX(767px)
+    padding: 25px 0
+
+  &__container
+    +container
+
+  &__box
+    display: flex
+    width: 100%
+    flex-wrap: wrap
+
+  &__item
+    padding: 0 15px
+    width: 50%
+
+    &:first-of-type
+      width: 40%
+      +MAX(969px)
+        order: 2
+    &:last-of-type
+      width: 60%
+      +MAX(969px)
+        order: 1
+
+    +MAX(767px)
+      width: 100%
+
+  &__columns
+    display: flex
+    justify-content: center
+    align-items: flex-end

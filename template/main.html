@@ -35,49 +35,289 @@
   </head>
   <body>
     <div class="loader js-loader"><img class="loader__icon" src="source/layout/loader/src/oval.svg" alt="Loading..."></div>
-    <!--include ../common/header/_header-->
-    <!-- Content-->
-    <div class="content js-content">
-      <!-- Content Blocks-->
-      <section class="content__blocks" id="contentPage"><br><br><br>
-        <!--TODO Banner-->
-        <!--TODO Articles-->
-        <!-- Blog-->
-        <section class="blog" style="background-image: url('source/components/blog/src/blog.jpg');">
-          <div class="blog__holder">
-            <div class="blog__container">
-              <div class="blog__box">
-                <div class="blog__titlebox"><span class="blog__category"><span>BLOG</span> / <a href="#">LOREM IPSUM DOLOR</a></span>
-                  <h2 class="blog__title">Booking A Holiday Tour Or Vacation In Egypt</h2>
-                  <div class="blog__land">Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna</div>
-                </div>
-                <div class="blog__content">
-                  <div class="blog__text">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna Lorem ipsum dolor  Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod temporsit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna</p>
+    <!-- Wrapper-->
+    <div class="wrapper js-wrapper">
+      <div class="wrapper__navigation">
+        <!-- Wrapper Close--><span class="wrapper__close"><i class="material-icons">arrow_back</i> CLOSE MENU</span>
+        <!-- Wrapper Navigation-->
+        <div class="wrapper__menu -menu-wrapped"></div>
+      </div>
+      <div class="wrapper__page">
+        <!-- Header-->
+        <header class="header js-header -header-landingPage -header-fixed">
+          <div class="header__wrapper">
+            <div class="header__content">
+              <div class="header__container">
+                <div class="header__box">
+                  <div class="header__item">
+                    <!--Logo--><a class="logo" href="#" title="Home Page">
+                      <div class="logo__brand"><img class="logo__image" src="source/common/logo/src/logo.png" alt="Fitness"></div>
+                      <div class="logo__content">
+                        <div class="logo__title">FITNESS</div>
+                        <div class="logo__text">by MSOBIECKI</div>
+                      </div>
+                      <!--img.logo__customImage(src="source/common/logo/src/logo.png" alt="Fitness")--></a>
+                  </div>
+                  <div class="header__item">
+                    <!-- Navigation-->
+                    <nav class="navigation js-navigation" role="navigation">
+                      <div class="navigation__box">
+                        <div class="navigation__menu">
+                          <!-- Menu-->
+                          <ul class="menu js-menu">
+                            <li class="menu__item"><a class="menu__link" href="#">About</a><span class="menu__dropdown"><i class="material-icons -add">add</i> <i class="material-icons -remove">remove</i></span>
+                              <ul class="menu__submenu">
+                                <li class="menu__subitem"><a class="menu__sublink" href="#">About</a></li>
+                                <li class="menu__subitem"><a class="menu__sublink" href="#">About</a></li>
+                                <li class="menu__subitem"><a class="menu__sublink" href="#">About</a></li>
+                                <li class="menu__subitem"><a class="menu__sublink" href="#">About</a></li>
+                                <li class="menu__subitem"><a class="menu__sublink" href="#">About</a></li>
+                                <li class="menu__subitem"><a class="menu__sublink" href="#">About</a></li>
+                              </ul>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="#">How it works</a><span class="menu__dropdown"><i class="material-icons -add">add</i> <i class="material-icons -remove">remove</i></span>
+                              <ul class="menu__submenu">
+                                <li class="menu__subitem"><a class="menu__sublink" href="#">About</a></li>
+                                <li class="menu__subitem"><a class="menu__sublink" href="#">About lorem ipsum el de sol</a></li>
+                                <li class="menu__subitem"><a class="menu__sublink" href="#">About</a></li>
+                                <li class="menu__subitem"><a class="menu__sublink" href="#">About</a></li>
+                                <li class="menu__subitem"><a class="menu__sublink" href="#">About</a></li>
+                                <li class="menu__subitem"><a class="menu__sublink" href="#">About</a></li>
+                              </ul>
+                            </li>
+                            <li class="menu__item"><span class="menu__link" href="#">Services</span><span class="menu__dropdown"><i class="material-icons -add">add</i> <i class="material-icons -remove">remove</i></span>
+                              <ul class="menu__submenu">
+                                <li class="menu__subitem"><a class="menu__sublink" href="#">About</a></li>
+                                <li class="menu__subitem"><a class="menu__sublink" href="#">About</a></li>
+                                <li class="menu__subitem"><a class="menu__sublink" href="#">About</a></li>
+                                <li class="menu__subitem"><a class="menu__sublink" href="#">About</a></li>
+                                <li class="menu__subitem"><a class="menu__sublink" href="#">About</a></li>
+                                <li class="menu__subitem"><a class="menu__sublink" href="#">About</a></li>
+                              </ul>
+                            </li>
+                            <li class="menu__item"><a class="menu__link" href="#">FAQ</a></li>
+                            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+                          </ul>
+                        </div>
+                        <div class="navigation__toggle">
+                          <!-- Menu Toggle Button-->
+                          <button class="navigation-toggle hamburger hamburger--spring" type="button"><span class="navigation-toggle__box hamburger-box"><span class="navigation-toggle__inner hamburger-inner"></span></span></button>
+                        </div>
+                      </div>
+                    </nav>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </header>
+        <!-- Content-->
+        <div class="content js-content">
+          <div class="banner js-banner -banner-slick">
+            <div class="banner__slider" data-slick="{&quot;speed&quot;: 3000, &quot;autoplaySpeed&quot;: 5000}">
+              <div class="banner__item">
+                <div class="banner__image" style="background-image: url('source/components/banner/src/banner-one.jpg');"></div>
+                <div class="banner__box">
+                  <div class="banner__content">
+                    <div class="banner__text">
+                      <h2>LOREM IPSUM</h2>
+                      <h1>LOREM IPSUM EL DOSOL</h1>
+                    </div><span class="banner__toggler" data-href="#contentPage" title="Przejdź dalej"><i class="material-icons">keyboard_arrow_down</i></span>
+                  </div>
+                </div>
+              </div><a class="banner__item -banner-content-left" href="#">
+                <div class="banner__image" style="background-image: url('source/components/banner/src/banner-one.jpg');"></div>
+                <div class="banner__box">
+                  <div class="banner__content">
+                    <div class="banner__text">
+                      <h2>LOREM IPSUM</h2>
+                      <h1>LOREM IPSUM EL DOSOL</h1>
+                    </div><span class="banner__toggler" data-href="#contentPage" title="Przejdź dalej"><i class="material-icons">keyboard_arrow_down</i></span>
+                  </div>
+                </div></a><a class="banner__item -banner-content-right" href="#">
+                <div class="banner__image" style="background-image: url('source/components/banner/src/banner-one.jpg');"></div>
+                <div class="banner__box">
+                  <div class="banner__content">
+                    <div class="banner__text">
+                      <h2>LOREM IPSUM</h2>
+                      <h1>LOREM IPSUM EL DOSOL</h1>
+                    </div><span class="banner__toggler" data-href="#contentPage" title="Przejdź dalej"><i class="material-icons">keyboard_arrow_down</i></span>
+                  </div>
+                </div></a>
+            </div>
+            <div class="banner__dots"></div>
+            <div class="banner__arrows"></div>
+          </div>
+          <!-- Content Blocks-->
+          <div class="content__blocks" id="contentPage">
+            <!-- Blog-->
+            <section class="blog" style="background-image: url('source/components/blog/src/blog.jpg');">
+              <div class="blog__holder">
+                <div class="blog__container">
+                  <div class="blog__box">
+                    <div class="blog__titlebox"><span class="blog__category"><span>BLOG</span> / <a href="#">LOREM IPSUM DOLOR</a></span>
+                      <h2 class="blog__title">Booking A Holiday Tour Or Vacation In Egypt</h2>
+                      <div class="blog__land">Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna</div>
+                    </div>
+                    <div class="blog__content">
+                      <div class="blog__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna Lorem ipsum dolor  Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod temporsit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna Lorem ipsum dolor sit amet, consectetur adipisicing eht, sed do eusmod tempor incididunt ut labore et dolor magna</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Posts-->
+            <section class="posts js-posts -slick">
+              <div class="posts__container">
+                <div class="posts__box">
+                  <div class="posts__item">
+                    <!-- Post-->
+                    <div class="posts-item">
+                      <div class="posts-item__imagebox"><img class="posts-item__image" src="source/components/posts/posts-item/src/post-one.jpg" alt="Post"></div>
+                      <div class="posts-item__details">
+                        <h3 class="posts-item__title">The Basic Of Buying A Telescope</h3>
+                        <div class="posts-item__text">Few would argue that, despite the advencements of feminism over the past three decades, women still face a double standard when it comes to their behavior.</div>
+                        <div class="posts-item__footer">
+                          <div class="posts-item__author"><i class="material-icons">person_outline</i> Caroline Fleming</div><a class="posts-item__more" href="#"><i class="material-icons">keyboard_arrow_right</i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="posts__item">
+                    <!-- Post-->
+                    <div class="posts-item">
+                      <div class="posts-item__imagebox"><img class="posts-item__image" src="source/components/posts/posts-item/src/post-two.jpg" alt="Post"></div>
+                      <div class="posts-item__details">
+                        <h3 class="posts-item__title">Stu Unger Rise And Fall of A Poker Genius</h3>
+                        <div class="posts-item__text">LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer, more</div>
+                        <div class="posts-item__footer">
+                          <div class="posts-item__author"><i class="material-icons">person_outline</i> Admin</div><a class="posts-item__more" href="#"><i class="material-icons">keyboard_arrow_right</i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="posts__item">
+                    <!-- Post-->
+                    <div class="posts-item">
+                      <div class="posts-item__imagebox"><img class="posts-item__image" src="source/components/posts/posts-item/src/post-three.jpg" alt="Post"></div>
+                      <div class="posts-item__details">
+                        <h3 class="posts-item__title">A Starter Guide To Self Improvement</h3>
+                        <div class="posts-item__text">It is a good idea to think of your PC as an office. It stores files, programs, pictures. This can be compared to an actual office's files, machines and decorations.</div>
+                        <div class="posts-item__footer">
+                          <div class="posts-item__author"><i class="material-icons">person_outline</i> Caroline Fleming</div><a class="posts-item__more" href="#"><i class="material-icons">keyboard_arrow_right</i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="posts__item">
+                    <!-- Post-->
+                    <div class="posts-item">
+                      <div class="posts-item__imagebox"><img class="posts-item__image" src="source/components/posts/posts-item/src/post-two.jpg" alt="Post"></div>
+                      <div class="posts-item__details">
+                        <h3 class="posts-item__title">Stu Unger Rise And Fall of A Poker Genius</h3>
+                        <div class="posts-item__text">LCD screens are uniquely modern in style, and the liquid crystals that make them work have allowed humanity to create slimmer, more</div>
+                        <div class="posts-item__footer">
+                          <div class="posts-item__author"><i class="material-icons">person_outline</i> Admin</div><a class="posts-item__more" href="#"><i class="material-icons">keyboard_arrow_right</i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="posts__item">
+                    <!-- Post-->
+                    <div class="posts-item">
+                      <div class="posts-item__imagebox"><img class="posts-item__image" src="source/components/posts/posts-item/src/post-one.jpg" alt="Post"></div>
+                      <div class="posts-item__details">
+                        <h3 class="posts-item__title">The Basic Of Buying A Telescope</h3>
+                        <div class="posts-item__text">Few would argue that, despite the advencements of feminism over the past three decades, women still face a double standard when it comes to their behavior.</div>
+                        <div class="posts-item__footer">
+                          <div class="posts-item__author"><i class="material-icons">person_outline</i> Caroline Fleming</div><a class="posts-item__more" href="#"><i class="material-icons">keyboard_arrow_right</i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="posts__item">
+                    <!-- Post-->
+                    <div class="posts-item">
+                      <div class="posts-item__imagebox"><img class="posts-item__image" src="source/components/posts/posts-item/src/post-three.jpg" alt="Post"></div>
+                      <div class="posts-item__details">
+                        <h3 class="posts-item__title">A Starter Guide To Self Improvement</h3>
+                        <div class="posts-item__text">It is a good idea to think of your PC as an office. It stores files, programs, pictures. This can be compared to an actual office's files, machines and decorations.</div>
+                        <div class="posts-item__footer">
+                          <div class="posts-item__author"><i class="material-icons">person_outline</i> Caroline Fleming</div><a class="posts-item__more" href="#"><i class="material-icons">keyboard_arrow_right</i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="posts__arrows"></div>
+              </div>
+              <div class="posts__dots"></div>
+            </section>
+          </div>
+        </div>
+        <!-- Abstract-->
+        <section class="abstract js-abstract">
+          <div class="abstract__item -abstract-left -abstract-bottom" style="background-image: url(source/components/abstract/src/abstract-one.jpg);">
+            <div class="abstract__container">
+              <div class="abstract__details">
+                <h2 class="abstract__title">More power behind every pixel!</h2>
+                <div class="abstract__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing.</div><a class="abstract__link" href="#">See the options <i class="material-icons">arrow_forward</i></a>
+              </div>
+            </div>
+          </div>
+          <div class="abstract__item -abstract-right -abstract-top" style="background-image: url(source/components/abstract/src/abstract-two.jpg);">
+            <div class="abstract__container">
+              <div class="abstract__details">
+                <h2 class="abstract__title">More power behind every pixel!</h2>
+                <div class="abstract__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing.</div><a class="abstract__link" href="#">See the options <i class="material-icons">arrow_forward</i> <i class="material-icons">arrow_forward</i></a>
+              </div>
+            </div>
+          </div>
         </section>
-        <!--TODO Posts-->
-        <!-- Posts-->
-        <section class="posts">
-          <div class="posts__item"></div>
-          <div class="posts__item"></div>
-          <div class="posts__item"></div>
-          <div class="posts__item"></div>
-          <div class="posts__item"></div>
-          <div class="posts__item"></div>
-        </section>
-        <!--TODO Abstract-->
-        <!--TODO Footer--><br><br><br>
-      </section>
+        <!-- Footer-->
+        <footer class="footer">
+          <div class="footer__container">
+            <div class="footer__box">
+              <div class="footer__item">
+                <!-- Footer-details-->
+                <div class="footer-details">
+                  <div class="footer-details__box">
+                    <div class="footer-details__item">
+                      <div class="footer-details__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__item">
+                <div class="footer__columns">
+                  <div class="footer__column">
+                    <!-- Footer Social-->
+                    <div class="footer-social"><a class="footer-social__item -facebook" href="#"><i class="fa fa-facebook"></i></a><a class="footer-social__item -twitter" href="#"><i class="fa fa-twitter"></i></a><a class="footer-social__item -youtube" href="#"><i class="fa fa-youtube-play"></i></a><a class="footer-social__item -linkedin" href="#"><i class="fa fa-linkedin"></i></a></div>
+                  </div>
+                  <div class="footer__column">
+                    <!-- Footer-newsletter-->
+                    <div class="footer-newsletter">
+                      <div class="footer-newsletter__title">Sign up for our newsletter</div>
+                      <div class="footer-newsletter__content">
+                        <div class="footer-newsletter__inputbox">
+                          <input class="footer-newsletter__input" placeholder="Email">
+                          <button class="footer-newsletter__submit"><i class="material-icons">navigate_next</i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
-    <!--include ../common/footer/_footer-->
     <!-- Arrow Scroll--><span class="arrow js-arrow"><i class="material-icons">keyboard_arrow_up</i></span>
     <!--Scripts-->
     <script src="scripts/main.min.js"></script>

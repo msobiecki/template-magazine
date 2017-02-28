@@ -2,25 +2,13 @@ extends layout/_layout
 
 block content
 
-  // Content Blocks
-  section.content__blocks#contentPage
+  .content.js-content
+    include components/banner/_banner
+    // Content Blocks
+    .content__blocks#contentPage
 
-    br
-    br
-    br
-    //TODO Banner
+      include components/blog/_blog
 
-    //TODO Articles
+      include components/posts/_posts
 
-    include components/blog/_blog
-
-    //TODO Posts
-
-    include components/posts/_posts
-
-    //TODO Abstract
-
-    //TODO Footer
-    br
-    br
-    br
+  include components/abstract/_abstract

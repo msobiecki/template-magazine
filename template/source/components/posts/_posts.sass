@@ -1,0 +1,80 @@
+.posts
+  position: relative
+  padding: 50px 0 35px
+
+  &__container
+    position: relative
+    +container
+
+  &__box
+    display: flex
+    flex-wrap: wrap
+
+    .-slick &
+      .slick-track
+        display: flex
+      .slick-slide
+        display: flex
+        height: auto
+
+  &__item
+    display: flex
+    padding: 15px
+    width: 33.33%
+    outline: none
+
+    +MAX(969px)
+      width: 50%
+
+    +MAX(767px)
+      width: 100%
+
+  &__dots
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 10px
+    margin: 0 3px
+    padding: 10px 0
+    ul
+      display: flex
+
+  &__dot
+    transition: background-color .15s ease-in-out
+
+    margin: 0 3px
+    width: 5px
+    height: 5px
+    cursor: pointer
+
+    background-color: rgba(0, 0, 0, 0.5)
+
+    .slick-active &
+      background-color: rgba(209, 35, 42, 0.8)
+
+    &:hover
+      background-color: rgba(209, 35, 42, 1)
+
+
+  &__arrow
+    position: absolute
+    cursor: pointer
+    top: 50%
+    transform: translateY(-50%)
+    color: rgba(209, 35, 42, 0.8)
+    font-size: 36px
+    transition: color 0.3s ease
+    +MAX(1025px)
+      display: none !important
+
+    &:hover
+      color: rgba(209, 35, 42, 1)
+
+    &.-prev
+      left: 5px
+
+    &.-next
+      right: 5px
+
+    &.slick-disabled
+      opacity: 0

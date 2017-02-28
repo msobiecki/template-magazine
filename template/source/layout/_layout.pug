@@ -7,13 +7,22 @@ html( lang="pl")
   body
     include loader/_loader
 
-    //include ../common/header/_header
+    // Wrapper
+    .wrapper.js-wrapper
+      .wrapper__navigation
+        // Wrapper Close
+        span.wrapper__close <i class="material-icons">arrow_back</i> CLOSE MENU
 
-    // Content
-    .content.js-content
-      block content
+        // Wrapper Navigation
+        .wrapper__menu.-menu-wrapped
 
-    //include ../common/footer/_footer
+      .wrapper__page
+        include ../common/header/_header
+
+        // Content
+        block content
+
+        include ../common/footer/_footer
 
     include arrow/_arrow
 
