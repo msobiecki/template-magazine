@@ -1,20 +1,20 @@
 (function () {
-  var slide = '.posts__item',
-    dots = '.posts__dots',
-    arrows = '.posts__arrows';
+  var slide = '.articles__item',
+    dots = '.articles__dots',
+    arrows = '.articles__arrows';
 
-  var posts = {
+  var articles = {
     init: function () {
       this.catchDOM();
-      if (isElement(this.$el)) {
+      if(isElement(this.$el)){
         if (isSlick(this.$el)) {
           this.generateSlick()
         }
       }
     },
     catchDOM: function () {
-      this.$el = $('.js-posts');
-      this.$slider = this.$el.find('.posts__box');
+      this.$el = $('.js-articles');
+      this.$slider = this.$el.find('.articles__box');
     },
     generateSlick: function () {
       this.$slider.slick({
@@ -23,17 +23,24 @@
         dots: true,
         appendDots: dots,
         customPaging: function (slider, i) {
-          return '<div class="posts__dot"></div>';
+          return '<div class="articles__dot"></div>';
         },
         arrows: true,
         appendArrows: arrows,
-        prevArrow: '<div class="posts__arrow -prev"><i class="material-icons">chevron_left</i></div>',
-        nextArrow: '<div class="posts__arrow -next"><i class="material-icons">chevron_right</i></div>',
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        prevArrow: '<div class="articles__arrow -prev"><i class="material-icons">chevron_left</i></div>',
+        nextArrow: '<div class="articles__arrow -next"><i class="material-icons">chevron_right</i></div>',
+        slidesToShow: 4,
+        slidesToScroll: 4,
         autoplay: true,
         speed: 3000,
         responsive: [
+          {
+            breakpoint: 1025,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          },
           {
             breakpoint: 969,
             settings: {
@@ -61,5 +68,5 @@
     return item.hasClass('-slick')
   }
 
-  posts.init();
+  articles.init();
 })();

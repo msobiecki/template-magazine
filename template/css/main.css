@@ -110,6 +110,11 @@ img {
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 /* Layout
@@ -189,7 +194,7 @@ html {
       align-items: center;
   height: 64px;
   width: 100%;
-  background-color: #a2ca28;
+  background-color: #cc171e;
   color: #ffffff;
   font-family: 'Merriweather', serif;
   font-weight: 700;
@@ -484,11 +489,11 @@ html {
 }
 
 .-header-landingPage-background .menu__link:hover {
-  color: #a2ca28;
+  color: #cc171e;
 }
 
 .-nav-active .menu__link {
-  color: #a2ca28;
+  color: #cc171e;
 }
 
 .-menu-wrapped .menu__link {
@@ -519,7 +524,7 @@ html {
 }
 
 .menu__dropdown:hover {
-  color: #a2ca28;
+  color: #cc171e;
 }
 
 .-header-landingPage-background .menu__dropdown {
@@ -527,7 +532,7 @@ html {
 }
 
 .-header-landingPage-background .menu__dropdown:hover {
-  color: #a2ca28;
+  color: #cc171e;
 }
 
 .menu__dropdown .-add {
@@ -593,7 +598,7 @@ html {
 
 .menu__sublink:hover {
   color: #ffffff;
-  background-color: #a2ca28;
+  background-color: #cc171e;
 }
 
 .-menu-wrapped .menu__sublink {
@@ -605,9 +610,6 @@ html {
   position: relative;
   z-index: 1;
   background-color: white;
-  padding-left: 40px;
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
 
 .content__blocks {
@@ -1068,6 +1070,7 @@ a.banner__item:hover .banner__text {
 }
 
 .blog {
+  position: relative;
   outline: none;
   display: block;
   background-size: cover;
@@ -1561,12 +1564,17 @@ a.banner__item:hover .banner__text {
   margin: 0 0 0 auto;
 }
 
+.abstract__date {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
 .abstract__title {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  font-size: 60px;
+  font-size: 45px;
   line-height: 1;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   cursor: default;
 }
 
@@ -1579,7 +1587,7 @@ a.banner__item:hover .banner__text {
 
 .abstract__text {
   font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 1.8;
   text-align: justify;
   margin-bottom: 25px;
@@ -1608,4 +1616,163 @@ a.banner__item:hover .banner__text {
 .abstract__link i {
   font-size: 12px;
   margin-left: 5px;
+}
+
+.articles {
+  position: relative;
+  padding: 50px 0 35px;
+  background-color: #cc171e;
+}
+
+.articles__container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 100%;
+  max-width: 1230px;
+}
+
+.articles__container:before, .articles__container:after {
+  content: " ";
+  display: table;
+}
+
+.articles__container:after {
+  clear: both;
+}
+
+@media (max-width: 969px) {
+  .articles__container {
+    padding: 0 15px;
+  }
+}
+
+.articles__title {
+  font-family: 'Merriweather', serif;
+  font-size: 35px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.articles__box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -8px;
+}
+
+.articles__item {
+  padding: 8px;
+  width: 25%;
+}
+
+@media (max-width: 1025px) {
+  .articles__item {
+    width: 33.33%;
+  }
+}
+
+@media (max-width: 969px) {
+  .articles__item {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .articles__item {
+    width: 100%;
+  }
+}
+
+.articles__dots {
+  position: absolute;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+  bottom: 10px;
+  margin: 0 3px;
+  padding: 10px 0;
+}
+
+.articles__dots ul {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.articles__dot {
+  transition: background-color .15s ease-in-out;
+  margin: 0 3px;
+  width: 5px;
+  height: 5px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slick-active .articles__dot {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.articles__dot:hover {
+  background-color: white;
+}
+
+.articles__arrow {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 36px;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 1025px) {
+  .articles__arrow {
+    display: none !important;
+  }
+}
+
+.articles__arrow:hover {
+  color: white;
+}
+
+.articles__arrow.-prev {
+  left: 0;
+}
+
+.articles__arrow.-next {
+  right: 0;
+}
+
+.articles__arrow.slick-disabled {
+  opacity: 0;
+}
+
+.articles-item {
+  display: block;
+}
+
+.articles-item__imagebox {
+  overflow: hidden;
+}
+
+.articles-item__image {
+  transition: transform .3s linear;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.articles-item:hover .articles-item__image {
+  -ms-transform: scale(1.033, 1.033);
+      transform: scale(1.033, 1.033);
+}
+
+.articles-item__text {
+  padding: 3px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: white;
 }

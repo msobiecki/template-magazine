@@ -3,9 +3,13 @@ extends layout/_layout
 block content
 
   .content.js-content
+    include common/header/_header
+
     include components/banner/_banner
     // Content Blocks
     .content__blocks#contentPage
+
+      include components/articles/_articles
 
       include components/blog/_blog
 

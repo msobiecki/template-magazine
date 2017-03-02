@@ -1,0 +1,21 @@
+.articles-item
+  $parent: &
+  display: block
+
+  &__imagebox
+    overflow: hidden
+
+  &__image
+    transition: transform .3s linear
+    display: block
+    width: 100%
+    margin: 0 auto
+
+    @at-root #{$parent}:hover &
+      transform: scale(1.033, 1.033)
+
+  &__text
+    padding: 3px
+    +fontOpenSans
+    font-size: 14px
+    color: white

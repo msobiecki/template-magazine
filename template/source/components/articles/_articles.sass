@@ -1,0 +1,82 @@
+.articles
+  position: relative
+  padding: 50px 0 35px
+  background-color: #cc171e
+
+  &__container
+    position: relative
+    +container
+
+  &__title
+    +fontMerriweather
+    font-size: 35px
+    color: white
+    margin-bottom: 15px
+
+  &__box
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -8px
+
+  &__item
+    padding: 8px
+    width: 25%
+
+    +MAX(1025px)
+      width: 33.33%
+
+    +MAX(969px)
+      width: 50%
+
+    +MAX(767px)
+      width: 100%
+
+  &__dots
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 10px
+    margin: 0 3px
+    padding: 10px 0
+    ul
+      display: flex
+
+  &__dot
+    transition: background-color .15s ease-in-out
+
+    margin: 0 3px
+    width: 5px
+    height: 5px
+    cursor: pointer
+
+    background-color: rgba(0, 0, 0, 0.5)
+
+    .slick-active &
+      background-color: rgba(255, 255, 255, 0.8)
+
+    &:hover
+      background-color: rgba(255, 255, 255, 1)
+
+
+  &__arrow
+    position: absolute
+    cursor: pointer
+    top: 50%
+    transform: translateY(-50%)
+    color: rgba(255, 255, 255, 0.8)
+    font-size: 36px
+    transition: color 0.3s ease
+    +MAX(1025px)
+      display: none !important
+
+    &:hover
+      color: rgba(255, 255, 255, 1)
+
+    &.-prev
+      left: 0
+
+    &.-next
+      right: 0
+
+    &.slick-disabled
+      opacity: 0
