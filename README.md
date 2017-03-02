@@ -1,3 +1,3 @@
 # Template-Magazine
 
-![preview]()
+![preview](https://i.imgur.com/MmpoMJP.jpg)
